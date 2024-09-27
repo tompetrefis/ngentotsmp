@@ -1,5 +1,4 @@
 import { Card, CardContent } from "./ui/card";
-import { humanDuration, naturalTime } from "@/lib/utils";
 
 import { Badge } from "./ui/badge";
 import Link from "next/link";
@@ -20,9 +19,6 @@ const VideoCard = ({ video }: any) => {
                     title={video.title}
                 />
                 </Link>
-                <Badge className="absolute bottom-1 right-1 px-1 bg-black bg-opacity-65">
-                    {humanDuration(video.length)}
-                </Badge>
             </div>
             <CardContent className="p-1.5"><h3>
                 <Link
